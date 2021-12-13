@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <h3>Add A New Item:</h3>
+    <div id="container">
+        <label>Name:</label><input type="text" placeholder="Where was the expense made?" id="nameInputField"><br>
+        <label>Date:</label><input type="date" id="dateInputField"><label>Amount:</label><input type="number" id="amountInputField"><br>
+        <button id="btn">Add Expense</button>
+    </div>
+    <table id="myTable">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td colspan="3" id="statement" style="background-color: rgb(240, 229, 229);">No Expense Added yet!</td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
